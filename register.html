@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Register User</title>
+    <script type="text/javascript" src="./register.js"></script>
+    <link rel="stylesheet" href="register.css" />
+  </head>
+
+  <body onload="getCurrentLocation()">
+    <header>
+      <h2>Notes Web App</h2>
+    </header>
+    <input
+      type="submit"
+      class="homebutton"
+      value="Home"
+      onclick="navToHome()"
+    />
+    <div class="row">
+      <div class="column" style="background-color: rgb(253, 252, 252, 0.8)">
+        <h3>Enter User Details</h3>
+        <form action="./notes.html" name="register">
+          <label for="fname">First Name:</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            autofocus
+            required
+          /><br /><br />
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" required /><br /><br />
+          <label for="uname">Email:</label>
+          <input
+            type="text"
+            id="uname"
+            name="uname"
+            placeholder="abc@gmail.com"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required
+          /><br /><br />
+          <label for="pwd">Password:</label>
+          <input
+            type="password"
+            id="pwd"
+            name="pwd"
+            placeholder="***"
+            pattern="[a-zA-Z0-9_!]{4,}"
+            required
+          /><br /><br />
+          <label for="gender">Gender:</label>
+          <input type="radio" name="gender" value="Male" /> Male
+          <input type="radio" name="gender" value="Female" /> Female
+          <br /><br />
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" /><br /><br />
+          <label for="number">Phone number:</label>
+          <input
+            type="text"
+            id="number"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          /><br /><br />
+          <label for="loc">Address:</label>
+          <input type="text" id="loc" /><br /><br />
+          <iframe
+            id="map"
+            style="width: 75%; height: 300px; margin-bottom: 30px"
+            title="Maps"
+          ></iframe
+          ><br /><br />
+          <input type="submit" value="Submit" onclick="registerUser()" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

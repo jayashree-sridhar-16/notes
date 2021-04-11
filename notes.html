@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Add Notes!</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="notes.css" />
+    <script type="text/javascript" src="./notes.js"></script>
+  </head>
+
+  <body onload="getNote()">
+    <header>
+      <h2>Notes Web App</h2>
+    </header>
+    <input
+      type="submit"
+      class="homebutton"
+      value="Home"
+      onclick="navToHome()"
+    />
+    <div class="row">
+      <div class="column" style="background-color: rgb(253, 252, 252, 0.8)">
+        <h3>Add notes here</h3>
+        <div id="container">
+          <textarea id="area" rows="10" cols="50" disabled></textarea
+          ><br /><br />
+          <input
+            type="button"
+            id="edit"
+            onclick="editNote()"
+            class="button"
+            value="Edit"
+          /><br /><br />
+          <input
+            type="button"
+            id="ok"
+            onclick="saveNote()"
+            class="button"
+            value="Save"
+          /><br /><br />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

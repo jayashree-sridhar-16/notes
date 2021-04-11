@@ -1,0 +1,73 @@
+body {
+    background-image: url('notes.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h3 {
+    text-align: center;
+    font-size: 35px;
+    color: #0b7aad;
+}
+
+/* Style the header */
+header {
+    background-color: rgb(36, 210, 233, 0.8);
+    padding: 20px;
+    text-align: center;
+    font-size: 45px;
+    color: rgb(243, 245, 247);
+
+}
+
+/* Container for flexboxes */
+.row {
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Create 2 equal columns that sits next to each other */
+.column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+    margin: 40px 100px 100px 100px;
+    /* Should be removed. Only for demonstration */
+}
+
+.button {
+    background-color: #4c90af;
+    border: rgb(243, 245, 247);
+    color: rgb(253, 250, 250);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 130px 150px;
+    cursor: pointer;
+    width: 350px;
+}
+
+form {
+    text-align: center;
+    font-size: large;
+}
+
+.homebutton {
+    background-color: #cf4533;
+    border: rgb(243, 245, 247);
+    color: rgb(253, 250, 250);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 550px;
+    margin-top: 50px;
+    cursor: pointer;
+    width: 350px;
+}
